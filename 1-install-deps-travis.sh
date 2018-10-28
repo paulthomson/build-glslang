@@ -12,7 +12,7 @@ GITHUB_RELEASE_TOOL_VERSION="v1.1.0"
 
 if [ "$(uname)" == "Darwin" ];
 then
-  brew install ninja
+  brew install ninja md5sha1sum
   GITHUB_RELEASE_TOOL_ARCH="darwin_amd64"
 fi
 

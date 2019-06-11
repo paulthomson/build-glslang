@@ -22,11 +22,11 @@ environment:
 
 install:
   - set "CLONE_DIR=glslang"
-  - set "PATH=%APPVEYOR_BUILD_FOLDER%\temp;%PATH%"
+  - set "PATH=C:\Python36-x64;%APPVEYOR_BUILD_FOLDER%\temp;%PATH%"
   - '"C:\Program Files\Git\bin\sh.exe" --login 1-install-deps-appveyor.sh'
   - refreshenv
   - set "CLONE_DIR=glslang"
-  - set "PATH=%APPVEYOR_BUILD_FOLDER%\temp;%PATH%"
+  - set "PATH=C:\Python36-x64;%APPVEYOR_BUILD_FOLDER%\temp;%PATH%"
   - set "GITHUB_USER=paulthomson"
   - set "GITHUB_REPO=build-glslang"
   - set "COMMIT_ID=%APPVEYOR_REPO_COMMIT%"
